@@ -10,6 +10,383 @@
 </head>
 <body>
 
+<style>
+
+    :root {
+      --ink: #1a1208;
+      --parchment: #f7f2e8;
+      --parchment-dark: #ede6d6;
+      --accent: #8b3a0f;
+      --accent-light: #c4651a;
+      --gold: #c9960c;
+      --muted: #6b5c46;
+      --word-bg: #fdf3e0;
+      --word-border: #e8c882;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--parchment);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      padding: 0 0 60px;
+      background-image:
+        radial-gradient(ellipse at 20% 10%, rgba(201,150,12,0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 90%, rgba(139,58,15,0.05) 0%, transparent 50%);
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 36px;
+      border-bottom: 1px solid rgba(139,58,15,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), var(--accent), var(--gold), transparent);
+    }
+
+    .header-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .header-sub {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .ornament {
+      color: var(--gold);
+      font-size: 18px;
+      margin: 12px 0;
+      letter-spacing: 8px;
+    }
+
+    .story-nav {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 24px 20px 0;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .nav-btn {
+      padding: 7px 16px;
+      border: 1px solid rgba(139,58,15,0.25);
+      border-radius: 30px;
+      background: transparent;
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-btn:hover { background: rgba(139,58,15,0.06); color: var(--accent); border-color: var(--accent-light); }
+    .nav-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 500; }
+
+    .stories-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .story {
+      display: none;
+      animation: fadeIn 0.35s ease;
+    }
+    .story.active { display: block; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    .story-header {
+      padding: 36px 0 20px;
+      border-bottom: 1px solid rgba(139,58,15,0.12);
+      margin-bottom: 28px;
+    }
+
+    .story-num {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .story-title {
+      font-family: 'Lora', serif;
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .story-tagline {
+      font-size: 13px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .level-badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 3px 10px;
+      background: var(--word-bg);
+      border: 1px solid var(--word-border);
+      border-radius: 20px;
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .story-body {
+      font-family: 'Lora', serif;
+      font-size: 16px;
+      line-height: 1.9;
+      color: var(--ink);
+    }
+
+    .story-body p {
+      margin-bottom: 18px;
+    }
+
+    .story-body p:first-child::first-letter {
+      font-size: 52px;
+      line-height: 1;
+      float: left;
+      margin: 4px 10px 0 0;
+      font-family: 'Lora', serif;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .vocab-word {
+      background: var(--word-bg);
+      border-bottom: 1.5px solid var(--gold);
+      cursor: pointer;
+      padding: 0 2px;
+      border-radius: 2px;
+      font-weight: 400;
+      transition: background 0.15s;
+      position: relative;
+    }
+
+    .vocab-word:hover { background: #fce8b2; }
+
+    .moral-box {
+      margin: 32px 0 36px;
+      padding: 20px 24px;
+      border-left: 3px solid var(--accent);
+      background: rgba(139,58,15,0.04);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .moral-label {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .moral-text {
+      font-family: 'Lora', serif;
+      font-size: 15px;
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    .vocab-section {
+      margin-top: 8px;
+      border-top: 1px solid rgba(139,58,15,0.12);
+      padding-top: 28px;
+    }
+
+    .vocab-heading {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .vocab-card {
+      background: var(--word-bg);
+      border: 1px solid var(--word-border);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+
+    .vocab-card-word {
+      font-family: 'Lora', serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 2px;
+    }
+
+    .vocab-card-type {
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 5px;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .vocab-card-def {
+      font-size: 13px;
+      color: var(--ink);
+      line-height: 1.5;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+    }
+
+    .vocab-card-example {
+      font-size: 12px;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 4px;
+      font-family: 'Lora', serif;
+      line-height: 1.4;
+    }
+
+    .practice-section {
+      margin-top: 28px;
+      padding: 20px;
+      background: rgba(201,150,12,0.06);
+      border-radius: 10px;
+      border: 1px solid rgba(201,150,12,0.2);
+    }
+
+    .practice-heading {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      font-family: 'DM Sans', sans-serif;
+      margin-bottom: 12px;
+    }
+
+    .practice-q {
+      font-size: 14px;
+      color: var(--ink);
+      margin-bottom: 8px;
+      line-height: 1.6;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .practice-q span {
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .story-nav-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(139,58,15,0.12);
+    }
+
+    .nav-arrow {
+      padding: 8px 20px;
+      border: 1px solid rgba(139,58,15,0.3);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--accent);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .nav-arrow:hover { background: var(--accent); color: #fff; }
+    .nav-arrow:disabled { opacity: 0.3; pointer-events: none; }
+
+    .progress-dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: rgba(139,58,15,0.2);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .dot.active { background: var(--accent); }
+
+    .tooltip {
+      display: none;
+      position: fixed;
+      background: var(--ink);
+      color: var(--parchment);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: 'DM Sans', sans-serif;
+      max-width: 220px;
+      z-index: 9999;
+      pointer-events: none;
+      line-height: 1.5;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+
+    .sr-only { position: absolute; left: -9999px; }
+
+    @media (max-width: 520px) {
+      .vocab-grid { grid-template-columns: 1fr; }
+      .story-body { font-size: 15px; }
+  }
+</style>
+
 <h2 class="sr-only">Five Aesop fables rewritten in simple English for beginner learners, with vocabulary definitions and comprehension questions</h2>
 
 <div id="tooltip" class="tooltip"></div>
@@ -1664,5 +2041,45 @@
 </div>
 
 </div>
+
+<script> 
+  let current = 0;
+
+    function goTo(n) {
+      document.querySelectorAll('.story').forEach((s,i) => {
+        s.classList.toggle('active', i === n);
+      });
+      document.querySelectorAll('.nav-btn').forEach((b,i) => {
+        b.classList.toggle('active', i === n);
+      });
+      current = n;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const tooltip = document.getElementById('tooltip');
+    document.querySelectorAll('.vocab-word').forEach(el => {
+      el.addEventListener('mouseenter', e => {
+        tooltip.textContent = el.dataset.def;
+        tooltip.style.display = 'block';
+        positionTooltip(e);
+      });
+      el.addEventListener('mousemove', positionTooltip);
+      el.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+      el.addEventListener('click', e => {
+        tooltip.textContent = el.dataset.def;
+        tooltip.style.display = 'block';
+        positionTooltip(e);
+        setTimeout(() => { tooltip.style.display = 'none'; }, 2500);
+      });
+    });
+
+    function positionTooltip(e) {
+      let x = e.clientX + 12, y = e.clientY - 36;
+      if (x + 240 > window.innerWidth) x = e.clientX - 230;
+      if (y < 0) y = e.clientY + 18;
+      tooltip.style.left = x + 'px';
+      tooltip.style.top = y + 'px';
+  }
+</script>
 </body>
 </html>
