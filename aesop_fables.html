@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styleaesop.css">
+<title>Aesop's Fables — Simple English Reader</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<h2 class="sr-only">Five Aesop fables rewritten in simple English for beginner learners, with vocabulary definitions and comprehension questions</h2>
+
+<div id="tooltip" class="tooltip"></div>
+
+<header>
+  <div class="header-eyebrow">Simple English Reading — Month 1</div>
+  <h1>Aesop's Fables</h1>
+  <div class="ornament">— ✦ —</div>
+  <p class="header-sub">Five famous stories, written in simple English. Underlined words have meanings you can learn. Read slowly and out loud.</p>
+</header>
+
+<div class="story-nav">
+  <button class="nav-btn active" onclick="goTo(0)">1. The Tortoise &amp; the Hare</button>
+  <button class="nav-btn" onclick="goTo(1)">2. The Lion &amp; the Mouse</button>
+  <button class="nav-btn" onclick="goTo(2)">3. The Boy Who Cried Wolf</button>
+  <button class="nav-btn" onclick="goTo(3)">4. The Ant &amp; the Grasshopper</button>
+  <button class="nav-btn" onclick="goTo(4)">5. The Fox &amp; the Grapes</button>
+  <button class="nav-btn" onclick="goTo(5)">6. The Crow &amp; the Pitcher</button>
+  <button class="nav-btn" onclick="goTo(6)">7. The Wind &amp; the Sun</button>
+  <button class="nav-btn" onclick="goTo(7)">8. The Dog &amp; the Bone</button>
+  <button class="nav-btn" onclick="goTo(8)">9. The Goose &amp; the Golden Egg</button>
+  <button class="nav-btn" onclick="goTo(9)">10. The Fox &amp; the Crow</button>
+  <button class="nav-btn" onclick="goTo(10)">11. The Two Friends &amp; the Bear</button>
+  <button class="nav-btn" onclick="goTo(11)">12. The Bundle of Sticks</button>
+  <button class="nav-btn" onclick="goTo(12)">13. The Milkmaid &amp; Her Pail</button>
+  <button class="nav-btn" onclick="goTo(13)">14. The Town Mouse &amp; the Country Mouse</button>
+  <button class="nav-btn" onclick="goTo(14)">15. The Donkey in the Lion's Skin</button>
+  <button class="nav-btn" onclick="goTo(15)">16. The Farmer &amp; the Stork</button>
+  <button class="nav-btn" onclick="goTo(16)">17. The Wolf in Sheep's Clothing</button>
+  <button class="nav-btn" onclick="goTo(17)">18. The Oak &amp; the Reed</button>
+  <button class="nav-btn" onclick="goTo(18)">19. The Fox &amp; the Stork</button>
+  <button class="nav-btn" onclick="goTo(19)">20. The Peacock &amp; the Crane</button>
+</div>
+
+<div class="stories-wrap">
+
+<!-- STORY 1 -->
+<div class="story active" id="s0">
+  <div class="story-header">
+    <div class="story-num">Story One</div>
+    <div class="story-title">The Tortoise and the Hare</div>
+    <div class="story-tagline">A story about pride and hard work</div>
+    <span class="level-badge">Week 1–2 level</span>
+  </div>
+
+  <div class="story-body">
+    <p>Once there was a <span class="vocab-word" data-def="a slow animal with a hard shell on its back">tortoise</span> and a <span class="vocab-word" data-def="an animal like a big rabbit, very fast">hare</span>. The hare could run very fast. He was <span class="vocab-word" data-def="too proud of yourself; thinking you are better than others">proud</span> of this. He often <span class="vocab-word" data-def="made fun of someone; said unkind things">laughed at</span> the tortoise. "You are so slow!" said the hare. "I am the fastest animal here."</p>
+
+    <p>One day, the tortoise said, "Let us have a race." The hare laughed. "A race? You are a tortoise! I will win easily." But the tortoise said, "We will see."</p>
+
+    <p>The race began. The hare ran very fast. He looked back and did not see the tortoise. He thought, "I have a lot of time. I will rest here." He sat down under a tree and fell asleep.</p>
+
+    <p>The tortoise did not stop. He walked slowly, but he did not rest. He walked and walked and walked. After a long time, the tortoise passed the sleeping hare. He kept walking.</p>
+
+    <p>When the hare <span class="vocab-word" data-def="woke up after sleeping">woke up</span>, he ran fast to the finish line. But when he arrived, the tortoise was already there. The tortoise won the race.</p>
+  </div>
+
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Slow and steady wins the race." — It is better to work hard every day than to be lazy, even if you are very talented.</div>
+  </div>
+
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">tortoise</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A slow animal with a very hard shell on its back. It lives on land.</div>
+        <div class="vocab-card-example">"The tortoise walked slowly to the finish line."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">hare</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">An animal like a big rabbit. It has long ears and runs very fast.</div>
+        <div class="vocab-card-example">"The hare ran quickly but fell asleep."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">proud</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Feeling very good about yourself — sometimes too much.</div>
+        <div class="vocab-card-example">"He was proud because he was the fastest."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">race</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A competition to see who is the fastest.</div>
+        <div class="vocab-card-example">"Let us have a race to the big tree."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">woke up</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Stopped sleeping. Base form: wake up.</div>
+        <div class="vocab-card-example">"He woke up very late in the morning."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">steady</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Continuing at the same speed without stopping.</div>
+        <div class="vocab-card-example">"She walked at a steady pace all day."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Who won the race — the hare or the tortoise?</div>
+    <div class="practice-q"><span>2.</span> Why did the hare fall asleep? Use "because" in your answer.</div>
+    <div class="practice-q"><span>3.</span> Write one sentence about the tortoise using "is" or "was".</div>
+    <div class="practice-q"><span>4.</span> What does proud mean? Write your own sentence with this word.</div>
+  </div>
+
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" disabled>← Previous</button>
+    <div class="progress-dots">
+      <div class="dot active" onclick="goTo(0)"></div>
+      <div class="dot" onclick="goTo(1)"></div>
+      <div class="dot" onclick="goTo(2)"></div>
+      <div class="dot" onclick="goTo(3)"></div>
+      <div class="dot" onclick="goTo(4)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(1)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 2 -->
+<div class="story" id="s1">
+  <div class="story-header">
+    <div class="story-num">Story Two</div>
+    <div class="story-title">The Lion and the Mouse</div>
+    <div class="story-tagline">A story about kindness and helping each other</div>
+    <span class="level-badge">Week 1–2 level</span>
+  </div>
+
+  <div class="story-body">
+    <p>One day, a big lion was sleeping under a tree. A small mouse was running and playing. The mouse did not see the lion. He ran over the lion's face. The lion woke up. He was very angry. He caught the mouse in his big paw.</p>
+
+    <p>"I will eat you!" said the lion. The mouse was very scared. "Please do not eat me," said the mouse. "I am very small. I am not a good meal for you. Please <span class="vocab-word" data-def="to let someone go free; to not keep them">let me go</span>. One day, I will help you." The lion laughed. "You? Help me? You are a small mouse. I am a great lion." But the lion was kind. He let the mouse go.</p>
+
+    <p>Some days later, the lion was walking in the forest. He stepped into a <span class="vocab-word" data-def="a tool that hunters use to catch animals — made of rope or wire">trap</span>. A net fell on him. He could not move. He <span class="vocab-word" data-def="made a loud, powerful sound like a lion">roared</span> very loudly. He was angry and scared.</p>
+
+    <p>The mouse heard the lion. He ran to the lion quickly. "I will help you," said the mouse. The mouse used his small sharp teeth. He bit the ropes of the net. He bit and bit until the ropes broke. The lion was free.</p>
+
+    <p>"Thank you, little mouse," said the lion. "You were right. You did help me." The mouse smiled. "Even a small friend can be a good friend," he said.</p>
+  </div>
+
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"A small kindness can come back to help you." — Do not think someone is too small or too weak to help you. Everyone can help.</div>
+  </div>
+
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">angry</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Very unhappy and upset about something. Feeling strong emotion.</div>
+        <div class="vocab-card-example">"The lion was angry when the mouse woke him up."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">scared</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Feeling afraid. Something makes you feel fear.</div>
+        <div class="vocab-card-example">"The mouse was very scared of the big lion."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">trap</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A device used to catch an animal. The animal cannot get out.</div>
+        <div class="vocab-card-example">"The lion stepped into a trap in the forest."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">roared</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Made a very loud, deep sound. Lions and tigers roar. Base form: roar.</div>
+        <div class="vocab-card-example">"The lion roared because he was trapped."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">sharp</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Having a very thin edge that can cut things easily. A knife is sharp.</div>
+        <div class="vocab-card-example">"The mouse had small but very sharp teeth."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">kindness</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The act of being friendly and helpful to other people or animals.</div>
+        <div class="vocab-card-example">"The lion showed kindness when he let the mouse go."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why was the lion angry at the start of the story?</div>
+    <div class="practice-q"><span>2.</span> What did the mouse do to help the lion? Write two sentences.</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using the word "scared".</div>
+    <div class="practice-q"><span>4.</span> Do you think the lion was right to let the mouse go? Write "Yes, because..." or "No, because..."</div>
+  </div>
+
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(0)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div>
+      <div class="dot active" onclick="goTo(1)"></div>
+      <div class="dot" onclick="goTo(2)"></div>
+      <div class="dot" onclick="goTo(3)"></div>
+      <div class="dot" onclick="goTo(4)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(2)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 3 -->
+<div class="story" id="s2">
+  <div class="story-header">
+    <div class="story-num">Story Three</div>
+    <div class="story-title">The Boy Who Cried Wolf</div>
+    <div class="story-tagline">A story about telling the truth</div>
+    <span class="level-badge">Week 2–3 level</span>
+  </div>
+
+  <div class="story-body">
+    <p>There was a young boy. His job was to watch the sheep on a hill near his village. Every day, he sat on the hill and watched the sheep eat grass. It was a quiet and boring job.</p>
+
+    <p>One day, the boy was <span class="vocab-word" data-def="feeling tired and unhappy because nothing interesting is happening">bored</span>. He had an idea. "I will play a trick," he thought. He ran to the village and shouted, "Wolf! Wolf! A wolf is eating the sheep!" The people of the village ran up the hill with sticks. But there was no wolf. The boy laughed. The people were very angry. They went back to the village.</p>
+
+    <p>The next week, the boy did the same thing again. "Wolf! Wolf!" he shouted. Again, the people ran up the hill. Again, there was no wolf. The boy laughed again. The people were angrier this time. "Do not <span class="vocab-word" data-def="to say something that is not true">lie</span> to us," they said.</p>
+
+    <p>Then, one day, a real wolf came. The wolf was big and <span class="vocab-word" data-def="dangerous and ready to attack; very fierce">fierce</span>. It ran at the sheep. The boy was very scared. He ran to the village and shouted, "Wolf! Wolf! Please help me! A real wolf is here!"</p>
+
+    <p>But the people heard him and did not come. They thought he was lying again. The wolf ate many of the sheep. The boy sat on the hill alone and cried. Nobody came to help him.</p>
+  </div>
+
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"If you always lie, people will not believe you when you tell the truth." — Honesty is very important. When you lie, you lose the trust of others.</div>
+  </div>
+
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">bored</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Feeling unhappy because nothing interesting is happening. You have nothing to do.</div>
+        <div class="vocab-card-example">"The boy was bored because the job was very quiet."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">trick</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">Something you do to make another person believe something that is not true.</div>
+        <div class="vocab-card-example">"He played a trick on the people of the village."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">lie</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To say something that you know is not true.</div>
+        <div class="vocab-card-example">"Do not lie — always tell the truth."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">fierce</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Very dangerous, strong, and ready to attack. Describes a violent animal.</div>
+        <div class="vocab-card-example">"The fierce wolf ran at the sheep."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">trust</div>
+        <div class="vocab-card-type">noun/verb</div>
+        <div class="vocab-card-def">Believing that a person is honest and will not hurt you.</div>
+        <div class="vocab-card-example">"The people lost their trust in the boy."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">honesty</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The quality of always telling the truth and not lying.</div>
+        <div class="vocab-card-example">"Honesty is one of the most important things in life."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why did the boy shout "Wolf!" the first time?</div>
+    <div class="practice-q"><span>2.</span> Why did the people not help the boy when the real wolf came?</div>
+    <div class="practice-q"><span>3.</span> Write a sentence with the word "bored". Use present simple.</div>
+    <div class="practice-q"><span>4.</span> Have you ever heard a story like this in your language? How is it the same? How is it different?</div>
+  </div>
+
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(1)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div>
+      <div class="dot" onclick="goTo(1)"></div>
+      <div class="dot active" onclick="goTo(2)"></div>
+      <div class="dot" onclick="goTo(3)"></div>
+      <div class="dot" onclick="goTo(4)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(3)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 4 -->
+<div class="story" id="s3">
+  <div class="story-header">
+    <div class="story-num">Story Four</div>
+    <div class="story-title">The Ant and the Grasshopper</div>
+    <div class="story-tagline">A story about planning and hard work</div>
+    <span class="level-badge">Week 3–4 level</span>
+  </div>
+
+  <div class="story-body">
+    <p>It was summer. The sun was hot and the days were long. An ant was working very hard. Every day, she carried food to her home under the ground. She worked all morning and all afternoon. She was <span class="vocab-word" data-def="getting ready for something that will happen in the future">preparing</span> for winter.</p>
+
+    <p>A <span class="vocab-word" data-def="a jumping insect that makes a singing sound; similar to a cricket">grasshopper</span> saw the ant. He was sitting on a leaf and singing. "Ant, why do you work so hard?" said the grasshopper. "It is summer! The sun is warm. Come and sing with me." The ant said, "I am working because winter is coming. I need food for the cold days." The grasshopper laughed. "Winter is far away. Do not worry. Come and play!"</p>
+
+    <p>The ant did not stop working. She carried food every day, all summer long. The grasshopper sang and played and ate. He did not work. He did not save any food.</p>
+
+    <p>Then winter came. The weather was cold and there was no food outside. The grasshopper was very hungry. He went to the ant's home and knocked on the door. "Please," he said. "I am very hungry and cold. I have no food. Can you help me?" The ant looked at the grasshopper. "I worked all summer," she said. "I told you to <span class="vocab-word" data-def="to keep something for later use">save</span> food. You did not listen. You only played." Then she closed the door.</p>
+
+    <p>The grasshopper stood alone in the cold and thought about his mistake.</p>
+  </div>
+
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Work hard today so you are ready for tomorrow." — It is important to plan and prepare. Do not only enjoy the good times and forget about difficulties that may come.</div>
+  </div>
+
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">preparing</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">Getting ready for something that will happen in the future. Base form: prepare.</div>
+        <div class="vocab-card-example">"She was preparing dinner for the family."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">grasshopper</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A green jumping insect. It makes a sound like singing. It lives in grass.</div>
+        <div class="vocab-card-example">"The grasshopper sat on a leaf and sang all day."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">save</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To keep something so you can use it later. To not use it all now.</div>
+        <div class="vocab-card-example">"I save money every month for the future."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">lazy</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Not wanting to work or do things. Preferring to rest all the time.</div>
+        <div class="vocab-card-example">"The grasshopper was lazy and did not save food."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">mistake</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">Something you do that is wrong or not good. An error.</div>
+        <div class="vocab-card-example">"Not saving food was a big mistake."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">hunger / hungry</div>
+        <div class="vocab-card-type">noun / adjective</div>
+        <div class="vocab-card-def">The feeling when you need food and have not eaten. "Hungry" = the adjective.</div>
+        <div class="vocab-card-example">"I am hungry — I did not eat breakfast."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> What did the ant do all summer? Write two sentences using present simple.</div>
+    <div class="practice-q"><span>2.</span> Why was the grasshopper hungry in winter?</div>
+    <div class="practice-q"><span>3.</span> Write a sentence: "The grasshopper did not _____ food."</div>
+    <div class="practice-q"><span>4.</span> Do you think the ant was right to close the door? Write "I think..." in your answer.</div>
+  </div>
+
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(2)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div>
+      <div class="dot" onclick="goTo(1)"></div>
+      <div class="dot" onclick="goTo(2)"></div>
+      <div class="dot active" onclick="goTo(3)"></div>
+      <div class="dot" onclick="goTo(4)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(4)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 5 -->
+<div class="story" id="s4">
+  <div class="story-header">
+    <div class="story-num">Story Five</div>
+    <div class="story-title">The Fox and the Grapes</div>
+    <div class="story-tagline">A story about accepting the truth</div>
+    <span class="level-badge">Week 3–4 level</span>
+  </div>
+
+  <div class="story-body">
+    <p>One hot afternoon, a fox was walking through a forest. He was very hungry. He looked everywhere for food but he could not find anything to eat. Then he saw something. High up on a tree, there was a big bunch of <span class="vocab-word" data-def="small round fruits that grow in groups; used to make wine">grapes</span>. They were dark purple and they looked sweet and delicious.</p>
+
+    <p>"Those grapes look wonderful," said the fox. "I will eat them." He jumped up to reach the grapes. But the grapes were too high. He could not reach them. He tried again. He jumped as high as he could. He still could not reach the grapes. He tried again and again, many times. Each time, he failed.</p>
+
+    <p>The fox was tired. He was hot. He sat down on the ground and looked up at the grapes. He could not get them. He would never get them. He felt <span class="vocab-word" data-def="embarrassed or unhappy because you failed at something">ashamed</span>.</p>
+
+    <p>Then the fox stood up. He put his nose in the air. He looked at the grapes one more time. "Those grapes are probably <span class="vocab-word" data-def="having a very sharp, unpleasant taste; not sweet — like a lemon">sour</span> anyway," he said. "I do not want them. They are not good grapes." He walked away with his head held high.</p>
+
+    <p>But really, the fox did want the grapes. And he did not know if they were sour or sweet. He only said they were sour because he could not have them.</p>
+  </div>
+
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"It is easy to say you do not want something when you cannot have it." — When we fail to get something, we sometimes say we did not want it anyway. But this is not honest — it is just a way to hide our disappointment.</div>
+  </div>
+
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">grapes</div>
+        <div class="vocab-card-type">noun (plural)</div>
+        <div class="vocab-card-def">Small, round, juicy fruit that grow in a bunch. They can be green or purple.</div>
+        <div class="vocab-card-example">"She bought a bunch of grapes from the market."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">reach</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To stretch out your arm or body to touch or get something.</div>
+        <div class="vocab-card-example">"I cannot reach the top shelf — it is too high."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">sour</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">A sharp, unpleasant taste. Not sweet. Like a lemon or unripe fruit.</div>
+        <div class="vocab-card-example">"This orange is very sour — it is not sweet."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">ashamed</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Feeling embarrassed and bad because you did something wrong or you failed.</div>
+        <div class="vocab-card-example">"He was ashamed because he could not reach the grapes."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">delicious</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Tasting very good. Very enjoyable to eat or drink.</div>
+        <div class="vocab-card-example">"The food at that restaurant is delicious."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">disappointment</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The sad feeling you have when something you wanted does not happen.</div>
+        <div class="vocab-card-example">"He felt great disappointment when he failed the exam."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why could the fox not get the grapes?</div>
+    <div class="practice-q"><span>2.</span> What did the fox say about the grapes? Why did he say this?</div>
+    <div class="practice-q"><span>3.</span> Write one sentence using the word "delicious".</div>
+    <div class="practice-q"><span>4.</span> Have you ever said something was bad because you could not have it? Write 2 sentences about it.</div>
+  </div>
+
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(3)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div>
+      <div class="dot" onclick="goTo(1)"></div>
+      <div class="dot" onclick="goTo(2)"></div>
+      <div class="dot" onclick="goTo(3)"></div>
+      <div class="dot active" onclick="goTo(4)"></div>
+    </div>
+    <button class="nav-arrow" disabled>Next →</button>
+  </div>
+</div>
+
+<!-- STORY 6 -->
+<div class="story" id="s5">
+  <div class="story-header">
+    <div class="story-num">Story Six</div>
+    <div class="story-title">The Crow and the Pitcher</div>
+    <div class="story-tagline">A story about using your mind to solve problems</div>
+    <span class="level-badge">Week 2–3 level</span>
+  </div>
+  <div class="story-body">
+    <p>It was a very hot summer day. A crow was flying over the land. She was very <span class="vocab-word" data-def="feeling that you need to drink water or liquid">thirsty</span>. She looked and looked for water. Then she saw a <span class="vocab-word" data-def="a tall container used to hold water or liquid, with a narrow opening at the top">pitcher</span> on the ground. She flew down and looked inside. There was water at the bottom. But the pitcher was tall and the water was very low. The crow put her beak inside. She could not reach the water. Her beak was too short.</p>
+    <p>The crow did not give up. She sat and thought. Then she had an idea. She looked around and saw many small stones. She picked up a stone in her beak and dropped it into the pitcher. Then she picked up another stone and dropped it in. She did this many times.</p>
+    <p>Slowly, the water began to rise. Each stone pushed the water a little higher. The crow kept dropping stones. She worked <span class="vocab-word" data-def="waiting calmly without getting angry or upset; continuing slowly without stopping">patiently</span> and did not stop. After a long time, the water was high enough. The crow put her beak in and drank the cool water. She was very happy.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Think carefully and use what you have." — When you have a problem, do not give up. Look around and think. Patience and a good idea can solve many problems.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">pitcher</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A tall container for holding liquid. It has a handle and a narrow top opening.</div>
+        <div class="vocab-card-example">"She filled the pitcher with cold water."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">thirsty</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Feeling that you need to drink water or liquid.</div>
+        <div class="vocab-card-example">"I am very thirsty — can I have some water please?"</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">patiently</div>
+        <div class="vocab-card-type">adverb</div>
+        <div class="vocab-card-def">In a calm way, waiting without getting angry or giving up.</div>
+        <div class="vocab-card-example">"She waited patiently for the bus to arrive."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">rise</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To go up. To move from a lower place to a higher place.</div>
+        <div class="vocab-card-example">"The water began to rise after the heavy rain."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">give up</div>
+        <div class="vocab-card-type">phrasal verb</div>
+        <div class="vocab-card-def">To stop trying because something is too hard.</div>
+        <div class="vocab-card-example">"Do not give up — keep trying and you will succeed."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">beak</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The hard, pointed mouth of a bird. Birds use their beak to eat and drink.</div>
+        <div class="vocab-card-example">"The crow used her beak to pick up the stone."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why could the crow not drink the water at first?</div>
+    <div class="practice-q"><span>2.</span> What was the crow's idea? Write two sentences.</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using "give up". Use "do not" in your sentence.</div>
+    <div class="practice-q"><span>4.</span> Have you ever solved a problem with a good idea? Write 2 sentences about it.</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(4)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot active" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(6)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 7 -->
+<div class="story" id="s6">
+  <div class="story-header">
+    <div class="story-num">Story Seven</div>
+    <div class="story-title">The Wind and the Sun</div>
+    <div class="story-tagline">A story about gentleness being stronger than force</div>
+    <span class="level-badge">Week 2–3 level</span>
+  </div>
+  <div class="story-body">
+    <p>One day, the Wind and the Sun had an <span class="vocab-word" data-def="a disagreement; when two people or things do not agree about something">argument</span>. "I am stronger than you," said the Wind. "No," said the Sun. "I am stronger." They could not agree. Then they saw a man walking on a road. He was wearing a warm coat.</p>
+    <p>"Let us have a <span class="vocab-word" data-def="a test between two people or things to see who is better">contest</span>," said the Sun. "The one who can make that man take off his coat is stronger." The Wind said yes. The Wind went first.</p>
+    <p>The Wind blew hard. He blew and blew with all his strength. The wind was very cold and very strong. But the man held his coat tightly. The harder the Wind blew, the more the man held his coat. The Wind blew for a long time. But the man did not take off his coat. The Wind stopped. He could not do it.</p>
+    <p>Now it was the Sun's turn. The Sun shone <span class="vocab-word" data-def="in a gentle and soft way; not hard or strong">gently</span>. He was warm and friendly. Slowly, the man felt the warmth. The man began to feel hot. He opened his coat a little. The Sun shone more. The man felt hotter. Then the man took off his coat and carried it in his hand. The Sun had won.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Gentleness and warmth are often stronger than force." — Forcing someone to do something does not always work. Being kind and gentle is often more powerful.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">argument</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A disagreement between two or more people. Each person thinks they are right.</div>
+        <div class="vocab-card-example">"They had an argument about who was right."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">contest</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A competition or test to find out who is better or stronger.</div>
+        <div class="vocab-card-example">"They had a contest to see who could run the fastest."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">gently</div>
+        <div class="vocab-card-type">adverb</div>
+        <div class="vocab-card-def">In a soft, calm, and kind way. Not rough or hard.</div>
+        <div class="vocab-card-example">"She gently picked up the small bird."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">strength</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The power to do things physically. How strong something is.</div>
+        <div class="vocab-card-example">"The wind used all its strength but could not win."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">tightly</div>
+        <div class="vocab-card-type">adverb</div>
+        <div class="vocab-card-def">Firmly and strongly. Holding something so it cannot move or fall.</div>
+        <div class="vocab-card-example">"She held the rope tightly so she did not fall."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">force</div>
+        <div class="vocab-card-type">noun/verb</div>
+        <div class="vocab-card-def">Strong power used to make someone do something they do not want to do.</div>
+        <div class="vocab-card-example">"You cannot force a person to be happy."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> What was the argument between the Wind and the Sun about?</div>
+    <div class="practice-q"><span>2.</span> Why did the man hold his coat tighter when the Wind blew?</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using the word "gently".</div>
+    <div class="practice-q"><span>4.</span> Think of a time someone was kind to you. Write 2 sentences about it.</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(5)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot active" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(7)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 8 -->
+<div class="story" id="s7">
+  <div class="story-header">
+    <div class="story-num">Story Eight</div>
+    <div class="story-title">The Dog and the Bone</div>
+    <div class="story-tagline">A story about being greedy and losing what you have</div>
+    <span class="level-badge">Week 1–2 level</span>
+  </div>
+  <div class="story-body">
+    <p>One day, a dog found a big bone. He was very happy. He picked it up in his mouth and walked home. On the way home, he crossed a small bridge over a river. He looked down into the water. In the water, he saw another dog. That dog also had a big bone in his mouth.</p>
+    <p>"That dog has a bone too!" thought our dog. "I want that bone. Then I will have two bones." He was <span class="vocab-word" data-def="wanting more than you need; not happy with what you have">greedy</span>. He did not think carefully. He opened his mouth and barked loudly at the dog in the water. He wanted to scare that dog and take his bone.</p>
+    <p>But when he opened his mouth to bark, his own bone fell into the river. It sank to the bottom. The dog looked in the water again. The other dog was gone too. There was no other dog. It was only his own <span class="vocab-word" data-def="an image of yourself that you see in water or a mirror">reflection</span> in the water.</p>
+    <p>Now the dog had no bone at all. He sat on the bridge and felt very sad. He had been greedy, and he had lost everything.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"If you are greedy and want too much, you may lose what you already have." — Be happy with what you have. Wanting more than you need can leave you with nothing.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">greedy</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Wanting more than you need. Not happy with what you already have.</div>
+        <div class="vocab-card-example">"He was greedy and wanted all the food for himself."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">reflection</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The image you see of yourself in water or a mirror.</div>
+        <div class="vocab-card-example">"She looked at her reflection in the river."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">bark</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">The sound a dog makes. To make this sound.</div>
+        <div class="vocab-card-example">"The dog began to bark at the stranger."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">sank</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Went down to the bottom of water. Base form: sink.</div>
+        <div class="vocab-card-example">"The stone sank to the bottom of the river."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">bridge</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A structure built over a river or road so people can cross it.</div>
+        <div class="vocab-card-example">"We walked across the bridge to the other side."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">lost</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">No longer had something. It was gone. Base form: lose.</div>
+        <div class="vocab-card-example">"He lost his bag on the way to school."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> What did the dog see in the water? What was it really?</div>
+    <div class="practice-q"><span>2.</span> Why did the dog lose his bone? Use "because" in your answer.</div>
+    <div class="practice-q"><span>3.</span> Write a sentence with the word "greedy".</div>
+    <div class="practice-q"><span>4.</span> Write 2 sentences about something you are happy to have in your life.</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(6)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot active" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(8)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 9 -->
+<div class="story" id="s8">
+  <div class="story-header">
+    <div class="story-num">Story Nine</div>
+    <div class="story-title">The Goose and the Golden Egg</div>
+    <div class="story-tagline">A story about greed destroying good things</div>
+    <span class="level-badge">Week 2–3 level</span>
+  </div>
+  <div class="story-body">
+    <p>Once there was a farmer and his wife. They had a goose. Every morning, the goose laid one egg. But this was not a normal egg. It was a golden egg. The farmer took the golden egg to the market and sold it. Every day he got one golden egg, and every day he sold it. He and his wife became <span class="vocab-word" data-def="having a lot of money and things; not poor">wealthy</span>.</p>
+    <p>But after some time, the farmer was not happy. "One egg a day is too slow," he thought. "I want all the gold now. There must be many golden eggs inside the goose." His wife agreed. They were both very greedy.</p>
+    <p>So one day, the farmer took a knife and cut open the goose. He looked inside. There were no golden eggs inside. The goose was the same as any other goose inside. He had killed the goose for nothing. Now the goose was dead. There were no more golden eggs. No more eggs at all.</p>
+    <p>The farmer and his wife sat and cried. They had been <span class="vocab-word" data-def="not thinking carefully about what might happen; making dangerous decisions">foolish</span>. In trying to get everything at once, they had lost everything.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Do not destroy a good thing by wanting too much too fast." — Be patient with good things in your life. If you are greedy and want everything now, you may end up with nothing.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">wealthy</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Having a lot of money and valuable things. Rich.</div>
+        <div class="vocab-card-example">"They became wealthy because of the golden eggs."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">laid</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Produced an egg. Base form: lay. Used for birds and animals.</div>
+        <div class="vocab-card-example">"The hen laid three eggs this morning."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">foolish</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Not thinking carefully. Making bad decisions without thinking.</div>
+        <div class="vocab-card-example">"It was foolish to spend all the money in one day."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">golden</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Made of gold or the colour of gold. Very valuable.</div>
+        <div class="vocab-card-example">"The golden egg was very valuable."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">patient</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Able to wait calmly without getting angry or upset.</div>
+        <div class="vocab-card-example">"Be patient — good things take time."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">destroy</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To damage something so badly that it is gone or broken completely.</div>
+        <div class="vocab-card-example">"The fire destroyed the whole building."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> What did the goose give the farmer every day?</div>
+    <div class="practice-q"><span>2.</span> Why did the farmer kill the goose? Was this a good idea?</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using "foolish".</div>
+    <div class="practice-q"><span>4.</span> Do you have something good in your life that you must take care of? Write 2 sentences.</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(7)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot active" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(9)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 10 -->
+<div class="story" id="s9">
+  <div class="story-header">
+    <div class="story-num">Story Ten</div>
+    <div class="story-title">The Fox and the Crow</div>
+    <div class="story-tagline">A story about flattery and not being fooled by kind words</div>
+    <span class="level-badge">Week 3–4 level</span>
+  </div>
+  <div class="story-body">
+    <p>One day, a crow found a big piece of cheese. She was very happy. She flew up to a branch of a tall tree and held the cheese in her beak. She was ready to eat it.</p>
+    <p>A fox saw the crow from below. He wanted the cheese. He thought of a plan. He stood under the tree and looked up at the crow. "Good morning, beautiful crow!" said the fox. "You have such <span class="vocab-word" data-def="beautiful and impressive; more than ordinary">magnificent</span> black feathers. Your eyes are bright like stars. You are truly the most beautiful bird I have ever seen."</p>
+    <p>The crow listened. She felt very happy. She liked these kind words very much. The fox continued. "I am sure that a bird as beautiful as you also has a wonderful voice. Can you sing for me? Please, just one song."</p>
+    <p>The crow was very <span class="vocab-word" data-def="feeling very pleased and happy about something — sometimes too much">flattered</span>. She wanted to show the fox her beautiful voice. She opened her beak wide and began to sing — "Caw! Caw! Caw!" The cheese fell from her beak. It dropped to the ground. The fox jumped on it and ate it quickly. Then he looked up and said, "You have a voice, it is true. But you do not have wisdom." He walked away with a smile.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Do not believe everything nice that people say about you." — When someone gives you many compliments, think carefully. They may want something from you.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">magnificent</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Very beautiful and impressive. Much better than normal.</div>
+        <div class="vocab-card-example">"The palace was magnificent — it was very beautiful."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">flattered</div>
+        <div class="vocab-card-type">adjective/verb</div>
+        <div class="vocab-card-def">Feeling pleased because someone said something very nice about you.</div>
+        <div class="vocab-card-example">"She was flattered when he said she was very talented."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">wisdom</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The ability to make good decisions. Knowledge from experience.</div>
+        <div class="vocab-card-example">"An old person often has great wisdom."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">compliment</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">Something nice you say to make a person feel good about themselves.</div>
+        <div class="vocab-card-example">"He gave her a compliment about her cooking."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">feathers</div>
+        <div class="vocab-card-type">noun (plural)</div>
+        <div class="vocab-card-def">The soft things that cover a bird's body. They help birds fly and stay warm.</div>
+        <div class="vocab-card-example">"The crow had shiny black feathers."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">flattery</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">Saying very nice things to someone, often to get something from them.</div>
+        <div class="vocab-card-example">"He used flattery to make her do what he wanted."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> What did the fox want? How did he try to get it?</div>
+    <div class="practice-q"><span>2.</span> Why did the crow open her beak? What happened?</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using the word "wisdom".</div>
+    <div class="practice-q"><span>4.</span> Has someone ever said very nice things to you to get something? Write 2 sentences.</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(8)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot active" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(10)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 11 -->
+<div class="story" id="s10">
+  <div class="story-header">
+    <div class="story-num">Story Eleven</div>
+    <div class="story-title">The Two Friends and the Bear</div>
+    <div class="story-tagline">A story about real friendship</div>
+    <span class="level-badge">Week 2–3 level</span>
+  </div>
+  <div class="story-body">
+    <p>Two friends were walking together through a forest. They had been friends for many years. They talked and laughed as they walked. Then suddenly, they heard a loud sound. A big bear was coming toward them through the trees.</p>
+    <p>The first friend was very scared. He did not think about his friend. He quickly ran to the nearest tree and climbed up. He hid in the branches and did not say a word.</p>
+    <p>The second friend could not climb trees. He was alone on the path. He thought quickly. He had heard that bears do not touch dead animals. He fell to the ground and lay completely still. He did not move. He did not make a sound. He held his breath.</p>
+    <p>The bear walked over to him. The bear put his big nose near the man's face and sniffed. The man did not move at all. After a moment, the bear walked away slowly. It thought the man was dead.</p>
+    <p>The first friend came down from the tree. He tried to smile. "What did the bear <span class="vocab-word" data-def="say quietly near your ear; speak very softly">whisper</span> to you?" he joked. The second friend looked at him seriously. "The bear told me something important," he said. "He told me never to trust a friend who runs away when you are in danger."</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"A true friend does not leave you when things are difficult." — You discover who your real friends are when you are in trouble or danger.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">whisper</div>
+        <div class="vocab-card-type">verb/noun</div>
+        <div class="vocab-card-def">To speak very softly and quietly so only one person can hear.</div>
+        <div class="vocab-card-example">"She whispered the secret in his ear."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">danger</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A situation where you could get hurt or something bad could happen.</div>
+        <div class="vocab-card-example">"The man was in danger when the bear came."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">trust</div>
+        <div class="vocab-card-type">verb/noun</div>
+        <div class="vocab-card-def">To believe that someone is honest and will help you and not hurt you.</div>
+        <div class="vocab-card-example">"I trust my best friend with everything."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">still</div>
+        <div class="vocab-card-type">adjective/adverb</div>
+        <div class="vocab-card-def">Not moving at all. Completely quiet and motionless.</div>
+        <div class="vocab-card-example">"He lay still on the ground and did not move."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">suddenly</div>
+        <div class="vocab-card-type">adverb</div>
+        <div class="vocab-card-def">Very quickly and without any warning. Happening fast and unexpectedly.</div>
+        <div class="vocab-card-example">"Suddenly, a bird flew out of the tree."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">discover</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To find out something for the first time. To learn something new.</div>
+        <div class="vocab-card-example">"You discover who your friends are when you need help."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> What did the first friend do when the bear came? Was this good?</div>
+    <div class="practice-q"><span>2.</span> How did the second friend save himself?</div>
+    <div class="practice-q"><span>3.</span> Write a sentence about your best friend using "trust".</div>
+    <div class="practice-q"><span>4.</span> What do you think a true friend does? Write 2 sentences starting with "A true friend..."</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(9)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot active" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(11)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 12 -->
+<div class="story" id="s11">
+  <div class="story-header">
+    <div class="story-num">Story Twelve</div>
+    <div class="story-title">The Bundle of Sticks</div>
+    <div class="story-tagline">A story about working together as a family</div>
+    <span class="level-badge">Week 3–4 level</span>
+  </div>
+  <div class="story-body">
+    <p>There was an old farmer. He had three sons. The three sons always <span class="vocab-word" data-def="had angry disagreements; fought with words">quarrelled</span> with each other. They never worked together. The father was very sad about this. He wanted his sons to be <span class="vocab-word" data-def="joined together; working as one group">united</span>.</p>
+    <p>One day, the old farmer called his three sons to him. He was very sick and he knew he would die soon. He gave each son a single stick. "Break it," he said. Each son easily broke his stick. Snap! It broke immediately.</p>
+    <p>Then the father took many sticks and tied them tightly together into a bundle. He gave the bundle to his oldest son. "Now break this," he said. The oldest son tried. He could not break it. He tried very hard but the bundle did not break. The second son tried. He also could not break it. The youngest son tried. He also failed.</p>
+    <p>The father looked at his sons. "Do you understand?" he said gently. "One stick alone is easy to break. But many sticks together cannot be broken. You are the same. If you fight each other, you are weak. If you work together, nobody can defeat you." The three sons looked at each other. They understood.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Together we are strong. Alone we are weak." — When people work together and help each other, they become much stronger than when they work alone.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">quarrelled</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Had an angry argument or fight with someone. Base form: quarrel.</div>
+        <div class="vocab-card-example">"The brothers quarrelled every day about small things."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">united</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Joined together as one group. Working together with the same goal.</div>
+        <div class="vocab-card-example">"The family was united and helped each other always."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">bundle</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A group of things tied or held together.</div>
+        <div class="vocab-card-example">"She carried a bundle of wood on her head."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">defeat</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To beat someone in a fight or competition. To make someone lose.</div>
+        <div class="vocab-card-example">"Together, they could not be defeated."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">weak</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Not strong. Easy to break or hurt. The opposite of strong.</div>
+        <div class="vocab-card-example">"One stick alone is weak and easy to break."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">immediately</div>
+        <div class="vocab-card-type">adverb</div>
+        <div class="vocab-card-def">Right away. Without any delay. At once.</div>
+        <div class="vocab-card-example">"The stick broke immediately — it was very easy."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why could the sons not break the bundle of sticks?</div>
+    <div class="practice-q"><span>2.</span> What lesson did the father want to teach? Write 2 sentences.</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using "united" or "together".</div>
+    <div class="practice-q"><span>4.</span> Do you work better alone or with other people? Write 2 sentences using "I think..."</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(10)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot active" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(12)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 13 -->
+<div class="story" id="s12">
+  <div class="story-header">
+    <div class="story-num">Story Thirteen</div>
+    <div class="story-title">The Milkmaid and Her Pail</div>
+    <div class="story-tagline">A story about counting your chickens before they hatch</div>
+    <span class="level-badge">Week 3–4 level</span>
+  </div>
+  <div class="story-body">
+    <p>A young milkmaid was walking to the market. She carried a large <span class="vocab-word" data-def="a round open container with a handle, used to carry liquid">pail</span> of milk on her head. As she walked, she began to think about all the things she would do with the money from the milk.</p>
+    <p>"I will sell this milk," she thought. "With the money, I will buy eggs. The eggs will <span class="vocab-word" data-def="to break open from an egg and come out as a baby animal">hatch</span> into chickens. I will have many chickens. I will sell the chickens and buy a beautiful dress. When I wear the dress to the market, all the young men will want to talk to me. But I will toss my head and say no to them all." She was very happy with her plan.</p>
+    <p>She was so happy that she tossed her head proudly — just as she had imagined. But when she tossed her head, the pail of milk fell from her head. It crashed to the ground. All the milk spilled onto the road. The pail was empty. There was no milk, no money, no eggs, no chickens, and no beautiful dress.</p>
+    <p>The milkmaid sat down on the road and cried. Her mother heard what happened and said, "Do not count your <span class="vocab-word" data-def="young birds that come out of eggs">chickens</span> before they hatch, my dear."</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Do not make plans based on things that have not happened yet." — It is good to dream, but do not act as if your dreams are already real. First do the work, then enjoy the result.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">pail</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A round open container with a handle used to carry water or liquid. Also called a bucket.</div>
+        <div class="vocab-card-example">"She carried the pail of water from the well."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">hatch</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">When a baby animal breaks out of an egg and is born.</div>
+        <div class="vocab-card-example">"The eggs hatched and five small chickens came out."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">spilled</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Liquid that fell or flowed out of its container by accident. Base form: spill.</div>
+        <div class="vocab-card-example">"He spilled his tea on the table."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">imagined</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Thought about something that is not real. Created a picture in your mind.</div>
+        <div class="vocab-card-example">"She imagined a beautiful life in the big city."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">toss</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To throw something lightly, or to move your head quickly to one side.</div>
+        <div class="vocab-card-example">"She tossed her head and walked away proudly."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">market</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A place where people buy and sell food and other things.</div>
+        <div class="vocab-card-example">"She went to the market to sell her vegetables."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> What was the milkmaid's plan? Write 3 sentences to explain it.</div>
+    <div class="practice-q"><span>2.</span> Why did the milk spill? Use "because" in your answer.</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using the word "imagined".</div>
+    <div class="practice-q"><span>4.</span> Have you ever planned something that did not happen? Write 2 sentences.</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(11)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot active" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(13)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 14 -->
+<div class="story" id="s13">
+  <div class="story-header">
+    <div class="story-num">Story Fourteen</div>
+    <div class="story-title">The Town Mouse and the Country Mouse</div>
+    <div class="story-tagline">A story about being happy with your own life</div>
+    <span class="level-badge">Week 3–4 level</span>
+  </div>
+  <div class="story-body">
+    <p>A country mouse lived in a simple hole in a field. He ate seeds and grain. His life was quiet and peaceful. One day, his cousin the town mouse came to visit. The country mouse was very happy. He gave his cousin seeds and dry bread to eat. The town mouse looked at the food. "Is this all you have?" he said. "Come to the city with me. I will show you real food."</p>
+    <p>So the country mouse went to the city. The town mouse lived in a big house. That night, he took the country mouse to a great dining room. The table was full of wonderful food — bread, meat, cheese, fruit, and sweet cake. The country mouse could not believe it. "This is amazing!" he said. He began to eat.</p>
+    <p>But suddenly, they heard a loud noise. A big dog ran into the room, barking loudly. The two mice ran and hid behind the wall. They were very scared. They waited and waited. When it was quiet, they came out again. But then the dog came back. Again they ran. They were <span class="vocab-word" data-def="shaking because of fear or cold">trembling</span> with fear.</p>
+    <p>The country mouse stopped eating. "I am going home," he said. "You have wonderful food here. But I am scared every minute. At home, I eat simple food but I eat it in <span class="vocab-word" data-def="a feeling of calm and safety; no worries or danger">peace</span>. That is enough for me."</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"A simple life with peace is better than a rich life with fear." — Having many things does not always mean you are happy. Safety and peace are very important.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">peaceful</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Calm and quiet. No noise, danger, or problems.</div>
+        <div class="vocab-card-example">"The countryside is very peaceful in the morning."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">trembling</div>
+        <div class="vocab-card-type">verb/adjective</div>
+        <div class="vocab-card-def">Shaking because you are cold, scared, or very emotional.</div>
+        <div class="vocab-card-example">"She was trembling because she was very scared."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">peace</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A state of calm and safety. No fighting, noise, or danger.</div>
+        <div class="vocab-card-example">"I want to live in peace and not worry every day."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">simple</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Not complicated or expensive. Basic and easy.</div>
+        <div class="vocab-card-example">"He lived a simple life in a small house."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">cousin</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The child of your uncle or aunt. A family member but not a brother or sister.</div>
+        <div class="vocab-card-example">"My cousin lives in another city."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">amazing</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Very surprising and impressive. Very good or very shocking.</div>
+        <div class="vocab-card-example">"The food at the table was amazing."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why did the country mouse go back home? Use "because".</div>
+    <div class="practice-q"><span>2.</span> Which life do you think is better — the town mouse or the country mouse? Write 2 sentences using "I think..."</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using the word "peaceful".</div>
+    <div class="practice-q"><span>4.</span> Describe your home in 3 simple sentences.</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(12)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot active" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(14)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 15 -->
+<div class="story" id="s14">
+  <div class="story-header">
+    <div class="story-num">Story Fifteen</div>
+    <div class="story-title">The Donkey in the Lion's Skin</div>
+    <div class="story-tagline">A story about pretending to be something you are not</div>
+    <span class="level-badge">Week 3–4 level</span>
+  </div>
+  <div class="story-body">
+    <p>A donkey found a lion's skin on the ground. Someone had left it there. The donkey was very excited. He picked it up and put it on. He looked in the river and saw his reflection. He looked exactly like a lion.</p>
+    <p>"I look like a lion!" he thought. "Now all the animals will be scared of me. I will have power." He walked into the forest wearing the lion's skin. All the animals saw him coming. They thought he was a real lion. They ran away in fear. The donkey was very happy. He felt powerful and important.</p>
+    <p>He walked through the forest, scaring every animal he saw. Then a fox came. The fox looked at the "lion" carefully. Something was not right. The fox was clever and did not run. Then the donkey made a mistake. He was so happy that he opened his mouth and <span class="vocab-word" data-def="the sound a donkey makes — a loud, harsh cry">brayed</span> loudly. "HEE-HAW! HEE-HAW!"</p>
+    <p>The fox laughed. "A lion's skin but a donkey's voice," said the fox. "You are not a lion. You are a donkey." All the other animals heard the donkey bray and they came back. They were not scared anymore. They laughed at the donkey. The donkey felt very <span class="vocab-word" data-def="embarrassed and unhappy because people are laughing at you">humiliated</span>. He took off the lion's skin and walked home alone.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"You cannot hide who you really are for long." — Wearing fine clothes or acting differently does not change who you are inside. The truth always comes out.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">brayed</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Made the loud "hee-haw" sound that a donkey makes. Base form: bray.</div>
+        <div class="vocab-card-example">"The donkey brayed loudly and everyone knew who he was."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">humiliated</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Feeling very embarrassed and ashamed because people laughed at you or saw your weakness.</div>
+        <div class="vocab-card-example">"He felt humiliated when everyone laughed at him."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">pretend</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To act as if something is true when it is not. To play a role.</div>
+        <div class="vocab-card-example">"He pretended to be sick so he did not go to school."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">powerful</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Having a lot of strength or control over others.</div>
+        <div class="vocab-card-example">"The lion is a powerful animal."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">clever</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Quick to understand and think. Smart and good at solving problems.</div>
+        <div class="vocab-card-example">"The fox was clever and was not fooled."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">exactly</div>
+        <div class="vocab-card-type">adverb</div>
+        <div class="vocab-card-def">Completely and perfectly. With no difference at all.</div>
+        <div class="vocab-card-example">"He looked exactly like his father."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> How did the fox know the "lion" was really a donkey?</div>
+    <div class="practice-q"><span>2.</span> Why did the donkey put on the lion's skin? Use "because".</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using the word "clever".</div>
+    <div class="practice-q"><span>4.</span> Write 2 sentences: what do you think is good about being honest about who you are?</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(13)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot active" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(15)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 16 -->
+<div class="story" id="s15">
+  <div class="story-header">
+    <div class="story-num">Story Sixteen</div>
+    <div class="story-title">The Farmer and the Stork</div>
+    <div class="story-tagline">A story about the company you keep</div>
+    <span class="level-badge">Week 3–4 level</span>
+  </div>
+  <div class="story-body">
+    <p>A farmer planted seeds in his field. But every day, birds came and ate his seeds. He was very angry. He set a <span class="vocab-word" data-def="a device used to catch animals or birds, made of ropes or wire">net</span> in the field to catch the birds.</p>
+    <p>The next morning, the farmer went to his field. In the net, he found many cranes. But he also found one stork. A stork is a different bird — it has long legs and a long beak. The stork was very scared. "Please let me go," said the stork. "I am not a crane. I am a stork. I am a good bird. I help farmers. I eat insects and rats. I have never eaten your seeds. Please, I am innocent."</p>
+    <p>The farmer looked at the stork. "I am sure you are a good bird," he said. "But I caught you with the cranes. You were with them when they ate my seeds. I cannot know if you ate my seeds or not. But I know you were with birds who did wrong. You must <span class="vocab-word" data-def="accept the result of something bad that happened">face the consequences</span> of the company you kept."</p>
+    <p>The stork was very sad. He understood the lesson too late. It is important to choose your friends carefully.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"You are judged by the company you keep." — If you spend time with people who do wrong, others will think you also do wrong. Choose your friends and companions carefully.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">net</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A material made of crossed strings with holes. Used to catch fish, birds, or animals.</div>
+        <div class="vocab-card-example">"The farmer set a net to catch the birds."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">innocent</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Not guilty. Did not do anything wrong.</div>
+        <div class="vocab-card-example">"The stork said he was innocent — he did not eat the seeds."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">consequences</div>
+        <div class="vocab-card-type">noun (plural)</div>
+        <div class="vocab-card-def">The results of an action — especially bad results.</div>
+        <div class="vocab-card-example">"You must face the consequences of your actions."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">company</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The people you spend time with. Your friends or companions.</div>
+        <div class="vocab-card-example">"Be careful about the company you keep."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">judged</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">When people form an opinion about you based on what they see.</div>
+        <div class="vocab-card-example">"He was judged by the people he spent time with."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">planted</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Put seeds in the ground so they would grow. Base form: plant.</div>
+        <div class="vocab-card-example">"The farmer planted seeds in the field every spring."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why did the farmer catch the stork? Was it fair?</div>
+    <div class="practice-q"><span>2.</span> Write 2 sentences about what "the company you keep" means to you.</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using the word "innocent".</div>
+    <div class="practice-q"><span>4.</span> Describe one of your good friends. Use "He/She is..." and present simple.</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(14)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot active" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(16)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 17 -->
+<div class="story" id="s16">
+  <div class="story-header">
+    <div class="story-num">Story Seventeen</div>
+    <div class="story-title">The Wolf in Sheep's Clothing</div>
+    <div class="story-tagline">A story about danger hiding in a friendly face</div>
+    <span class="level-badge">Week 3–4 level</span>
+  </div>
+  <div class="story-body">
+    <p>A hungry wolf wanted to eat some sheep. But the sheep lived near a shepherd who watched them carefully. Every time the wolf came close, the shepherd and his dogs chased him away. The wolf could not get near the sheep.</p>
+    <p>One day, the wolf found the skin of a dead sheep on the ground. He had an idea. He put the sheep's skin over his body. He looked just like a sheep. He walked slowly toward the <span class="vocab-word" data-def="a group of sheep or other animals that live and move together">flock</span>. The shepherd did not see anything wrong. The wolf joined the sheep and walked with them all day.</p>
+    <p>When evening came, the shepherd put all the sheep in a pen for the night. The wolf in sheep's clothing went inside with them. The shepherd closed the gate and went home to sleep. He did not know that the wolf was inside.</p>
+    <p>That night, the shepherd was hungry. He went to the pen to take a sheep for dinner. In the dark, he did not see clearly. He reached in and grabbed the wolf by mistake. He brought it home. When he saw what he had, he was very surprised. He had caught the wolf himself — the wolf's own <span class="vocab-word" data-def="a plan to trick someone; something done to deceive">trick</span> had led to his end.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Not everything that looks safe or friendly is safe." — Be careful of people who look kind on the outside but have bad intentions inside. And be careful — a bad plan can turn against you.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">flock</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A group of sheep or birds that live and move together.</div>
+        <div class="vocab-card-example">"The shepherd watched over his flock every day."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">shepherd</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A person whose job is to look after and protect sheep.</div>
+        <div class="vocab-card-example">"The shepherd kept his sheep safe from wolves."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">clothing</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The things you wear on your body. Clothes in general.</div>
+        <div class="vocab-card-example">"He wore warm clothing in the cold weather."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">intention</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">What you plan or want to do. Your real purpose for doing something.</div>
+        <div class="vocab-card-example">"His intention was to eat the sheep, not to be friendly."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">pen</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A small enclosed area where animals are kept at night. Also called a yard.</div>
+        <div class="vocab-card-example">"The farmer put the chickens in the pen at night."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">grabbed</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Took hold of something quickly and firmly. Base form: grab.</div>
+        <div class="vocab-card-example">"He grabbed the bag before it fell."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> How did the wolf get into the pen with the sheep?</div>
+    <div class="practice-q"><span>2.</span> What happened to the wolf at the end? Was this fair?</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using "intention".</div>
+    <div class="practice-q"><span>4.</span> Write 2 sentences: how do you know if a person is truly kind or not?</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(15)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot active" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(17)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 18 -->
+<div class="story" id="s17">
+  <div class="story-header">
+    <div class="story-num">Story Eighteen</div>
+    <div class="story-title">The Oak and the Reed</div>
+    <div class="story-tagline">A story about flexibility and strength</div>
+    <span class="level-badge">Week 4 level</span>
+  </div>
+  <div class="story-body">
+    <p>Near a river, there was a very large and strong oak tree. Next to it grew a thin reed — a tall grass plant. The oak tree was proud of his great size and strength. He looked down at the small reed and felt sorry for it.</p>
+    <p>"You are so thin and small," said the oak. "Every small wind makes you bend. You have no strength. I am strong and tall. Nothing can move me." The reed did not say much. He only <span class="vocab-word" data-def="moved gently from side to side, like a tree in the wind">swayed</span> quietly in the breeze.</p>
+    <p>One night, a great storm came. The wind was very powerful. It blew with enormous force. The oak tree stood firm. He did not want to bend. He fought the storm. He was too proud to move. The wind blew harder and harder. Then with a great crack — the oak tree broke. He fell to the ground. His great trunk snapped in two.</p>
+    <p>The thin reed bent all the way down in the storm. He moved with the wind, not against it. When the storm passed, the reed stood up again slowly. He looked at the broken oak. "You were stronger than me," said the reed gently. "But you did not know how to <span class="vocab-word" data-def="to change and move according to the situation; not be rigid">bend</span>. I am flexible and I am still here."</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Sometimes it is wiser to bend than to break." — Being flexible and adapting to difficult situations is often smarter than being rigid and refusing to change.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">swayed</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Moved slowly from side to side. Base form: sway.</div>
+        <div class="vocab-card-example">"The trees swayed gently in the wind."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">bend</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To curve or move away from being straight. To not be rigid.</div>
+        <div class="vocab-card-example">"The grass bends in the wind but does not break."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">flexible</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Able to bend and change without breaking. Adaptable.</div>
+        <div class="vocab-card-example">"A flexible person can adapt to change easily."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">enormous</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Very, very large. Much bigger than normal.</div>
+        <div class="vocab-card-example">"The storm had enormous power and broke the tree."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">trunk</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The main thick stem of a tree. The part between the roots and the branches.</div>
+        <div class="vocab-card-example">"The trunk of the old tree was very wide."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">rigid</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Not able to bend. Very stiff and fixed. Not willing to change.</div>
+        <div class="vocab-card-example">"He was too rigid — he would never change his mind."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why did the oak tree break in the storm? Why did the reed survive?</div>
+    <div class="practice-q"><span>2.</span> Write 2 sentences: what does it mean to be "flexible" in your own life?</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using the word "enormous".</div>
+    <div class="practice-q"><span>4.</span> Do you think it is important to change and adapt? Write 2 sentences using "I think..."</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(16)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot active" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(18)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 19 -->
+<div class="story" id="s18">
+  <div class="story-header">
+    <div class="story-num">Story Nineteen</div>
+    <div class="story-title">The Fox and the Stork</div>
+    <div class="story-tagline">A story about treating others the way you want to be treated</div>
+    <span class="level-badge">Week 4 level</span>
+  </div>
+  <div class="story-body">
+    <p>One day, a fox invited a stork to dinner. The stork was very happy. She put on her best feathers and walked to the fox's home. The fox welcomed her with a big smile.</p>
+    <p>The fox brought out the food. It was a delicious soup. But the fox served the soup on a large flat plate. The stork looked at the plate. She had a long, thin beak. She could not drink from a flat plate. She tried and tried but she could not eat the soup at all. The fox ate his soup happily. He <span class="vocab-word" data-def="tried not to laugh but could not completely stop">suppressed a smile</span>. He had done this on purpose. He was playing a trick on the stork.</p>
+    <p>The stork went home hungry. But she did not get angry. She thought of a plan. The next week, the stork invited the fox to dinner. The fox was happy. He came to the stork's home and sat at the table.</p>
+    <p>The stork served the same soup. But she put it in a tall, narrow <span class="vocab-word" data-def="a container with a narrow long neck and a wider bottom, used for liquids">jar</span>. The stork put her long beak inside easily and ate all the soup. But the fox had a short, wide mouth. He could not get his mouth into the jar. He could not eat anything. He went home hungry.</p>
+    <p>The stork smiled. "I only treated you the way you treated me," she said.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"Treat others the way you want to be treated." — If you do something unkind to someone, do not be surprised when they do the same to you.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">jar</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">A container with a narrow neck and a wider bottom, used for liquids or food.</div>
+        <div class="vocab-card-example">"She put the honey in a tall glass jar."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">invited</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Asked someone to come to your home or an event. Base form: invite.</div>
+        <div class="vocab-card-example">"She invited all her friends to her birthday party."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">served</div>
+        <div class="vocab-card-type">verb (past)</div>
+        <div class="vocab-card-def">Gave food or drink to a person at a table. Base form: serve.</div>
+        <div class="vocab-card-example">"The waiter served the food to the guests."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">on purpose</div>
+        <div class="vocab-card-type">phrase</div>
+        <div class="vocab-card-def">Done intentionally. You planned to do it — it was not an accident.</div>
+        <div class="vocab-card-example">"He broke the cup on purpose because he was angry."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">narrow</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Not wide. Small in width. Thin from one side to the other.</div>
+        <div class="vocab-card-example">"The jar had a narrow opening at the top."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">treat</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To behave toward someone in a particular way.</div>
+        <div class="vocab-card-example">"Treat other people the way you want them to treat you."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why could the stork not eat at the fox's home?</div>
+    <div class="practice-q"><span>2.</span> How did the stork get her revenge? Write 2 sentences.</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using "on purpose".</div>
+    <div class="practice-q"><span>4.</span> Write 2 sentences about how you treat other people in your life.</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(17)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot active" onclick="goTo(18)"></div><div class="dot" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" onclick="goTo(19)">Next →</button>
+  </div>
+</div>
+
+<!-- STORY 20 -->
+<div class="story" id="s19">
+  <div class="story-header">
+    <div class="story-num">Story Twenty</div>
+    <div class="story-title">The Peacock and the Crane</div>
+    <div class="story-tagline">A story about true value and not judging by appearance</div>
+    <span class="level-badge">Week 4 level</span>
+  </div>
+  <div class="story-body">
+    <p>A peacock and a crane lived near the same lake. The peacock was very beautiful. He had long, colourful feathers with bright blue and green colours. He was very proud of his beautiful tail. He opened it wide every day for everyone to see.</p>
+    <p>One day, the peacock saw the crane. The crane had plain grey and white feathers. They were not colourful at all. The peacock <span class="vocab-word" data-def="looked at someone in a way that shows you think they are not important">looked down on</span> the crane. "Look at you," said the peacock. "Your feathers are so plain and dull. Nobody looks at you. But everyone looks at me. My feathers are like a rainbow. I am the most beautiful bird here."</p>
+    <p>The crane listened quietly. He did not get angry. He looked at the peacock calmly and said, "Yes, your feathers are beautiful. But what can you do with them? You cannot fly. You stay on the ground and show your colours to people. But look at me." The crane <span class="vocab-word" data-def="opened his wings and rose up into the sky">spread his wings and flew</span> up into the sky. He rose higher and higher above the clouds. He flew over the mountains and the sea.</p>
+    <p>"My feathers may be plain," called the crane from above, "but they carry me to the sky. Your feathers are beautiful — but they keep you on the ground." The peacock looked up and said nothing. For the first time, he felt <span class="vocab-word" data-def="unhappy because someone else has something better than you">envious</span> of another bird.</p>
+  </div>
+  <div class="moral-box">
+    <div class="moral-label">The lesson of this story</div>
+    <div class="moral-text">"What you can do is more important than how you look." — Beauty on the outside is not the most important thing. Skills, ability, and what you can achieve matter more.</div>
+  </div>
+  <div class="vocab-section">
+    <div class="vocab-heading">New words in this story</div>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-card-word">plain</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Simple and not decorated or colourful. Not special to look at.</div>
+        <div class="vocab-card-example">"She wore a plain white dress with no decoration."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">envious</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Feeling unhappy because someone else has something better than you. Jealous.</div>
+        <div class="vocab-card-example">"He was envious of his brother's new car."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">appearance</div>
+        <div class="vocab-card-type">noun</div>
+        <div class="vocab-card-def">The way someone or something looks on the outside.</div>
+        <div class="vocab-card-example">"Do not judge a person only by their appearance."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">dull</div>
+        <div class="vocab-card-type">adjective</div>
+        <div class="vocab-card-def">Not interesting or bright. Boring to look at. Not colourful.</div>
+        <div class="vocab-card-example">"The grey sky looked dull on that cloudy day."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">achieve</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To succeed in doing something through hard work or skill.</div>
+        <div class="vocab-card-example">"She worked hard to achieve her dream."</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card-word">spread</div>
+        <div class="vocab-card-type">verb</div>
+        <div class="vocab-card-def">To open something wide. To extend outward from a centre point.</div>
+        <div class="vocab-card-example">"The bird spread its wings and flew away."</div>
+      </div>
+    </div>
+  </div>
+  <div class="practice-section">
+    <div class="practice-heading">Comprehension questions — write your answers</div>
+    <div class="practice-q"><span>1.</span> Why did the peacock think he was better than the crane?</div>
+    <div class="practice-q"><span>2.</span> What could the crane do that the peacock could not? Write 2 sentences.</div>
+    <div class="practice-q"><span>3.</span> Write a sentence using the word "achieve".</div>
+    <div class="practice-q"><span>4.</span> Write 2 sentences: what do you think is more important — how you look or what you can do?</div>
+  </div>
+  <div class="story-nav-bottom">
+    <button class="nav-arrow" onclick="goTo(18)">← Previous</button>
+    <div class="progress-dots">
+      <div class="dot" onclick="goTo(0)"></div><div class="dot" onclick="goTo(1)"></div><div class="dot" onclick="goTo(2)"></div><div class="dot" onclick="goTo(3)"></div><div class="dot" onclick="goTo(4)"></div>
+      <div class="dot" onclick="goTo(5)"></div><div class="dot" onclick="goTo(6)"></div><div class="dot" onclick="goTo(7)"></div><div class="dot" onclick="goTo(8)"></div><div class="dot" onclick="goTo(9)"></div>
+      <div class="dot" onclick="goTo(10)"></div><div class="dot" onclick="goTo(11)"></div><div class="dot" onclick="goTo(12)"></div><div class="dot" onclick="goTo(13)"></div><div class="dot" onclick="goTo(14)"></div>
+      <div class="dot" onclick="goTo(15)"></div><div class="dot" onclick="goTo(16)"></div><div class="dot" onclick="goTo(17)"></div><div class="dot" onclick="goTo(18)"></div><div class="dot active" onclick="goTo(19)"></div>
+    </div>
+    <button class="nav-arrow" disabled>Next →</button>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
